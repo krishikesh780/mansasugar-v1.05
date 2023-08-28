@@ -31,6 +31,51 @@
       <link href="css/bootstrap.min.css" rel="stylesheet" />
       <!-- Template Stylesheet -->
       <link href="css/style.css" rel="stylesheet" />
+      <style>
+         /* Change background color when scrolled */
+
+      
+
+@media(min-width:992px){
+
+   .navbar.scrolled {
+  background-color: white; /* Change background color when scrolled */
+height: 100px;
+width: 100%;
+padding-bottom: 50px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Horizontal offset, vertical offset, blur radius, color */
+
+
+}
+ 
+.navbar-brand img {
+  max-height: 100px; /* Decrease logo size when scrolled */
+  transition: max-height 0.3s ease;
+}
+
+}
+
+@media(max-width:768px){
+
+.navbar.scrolled {
+background-color: white; /* Change background color when scrolled */
+height: 100px;
+width: 100%;
+padding-bottom: 100px;
+margin-top: -50px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Horizontal offset, vertical offset, blur radius, color */
+
+}
+
+.navbar-brand img {
+max-height: 100px; /* Decrease logo size when scrolled */
+transition: max-height 0.3s ease;
+}
+
+}
+
+/* end */
+      </style>
    </head>
    <body>
       <!-- Topbar Start -->
@@ -64,20 +109,18 @@
                      <img id="brand-img" src="img/logo6.png" style="height: 150px; background-color: transparent;" />
                   </h1>
                </a>
-               <button
-                  class="navbar-toggler"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarSupportedContent"
-                  aria-controls="navbarSupportedContent"
-                  aria-
-                  expanded="false"
-                  aria-label="Toggle navigation"
-                  >
-               <span class="navbar -toggler-icon">
-               <i class="fas fa-bars" style="color: #000; font-size: 30px; text-align: center;"></i>
-               </span>
-               </button>
+               <button id="toggleButton"
+    class="navbar-toggler"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon">
+        <i class="fas fa-bars" style="color: #000; font-size: 30px; text-align: center;"></i>
+    </span>
+</button>
                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav ms-auto me-3">
                      <li class="nav-item">
@@ -332,68 +375,69 @@
             </div>
          </div>
       </section>
-      <!-- Contact Start -->
-      <section id="contact">
-         <div class="container bg-opacity-50 pt-5 px-5 py-10 my-5">
-            <div class="text-center mx-auto mb-5" style="max-width: 600px">
-               <h1 class="display-5 mb-0">Contact Us</h1>
-               <hr class="w-25 mx-auto" />
-            </div>
-            <!-- <p class="display-5 text-center mb-5">
-               Feel free to contact us:       
-               </p> -->
-            <div class="row">
-               <!-- Contact Info Section -->
-               <div class="col-md-6">
-                  <h5 class="mb-4">Our Office</h5>
-                  <p class="mb-2">
-                     <i class="fa fa-map-marker-alt me-3"></i>Mansa Sugar Limited.
-                     Chembe, Mansa, Luapula Province, Zambia.
-                  </p>
-                  <p class="mb-2">
-                     <i class="fa fa-phone-alt me-3"></i> +260 962377783
-                  </p>
-                  <p class="mb-2">
-                     <i class="fa fa-envelope me-3"></i>customercare@mansasugar.com
-                  </p>
-                  <div class="d-flex pt-3">
-                     <a
-                        class="btn btn-square btn-primary rounded-circle me-2"
-                        href="https://www.instagram.com/mansasugarlimited/"
-                        ><i class="fab fa-instagram"></i
-                        ></a>
-                     <a
-                        class="btn btn-square btn-primary rounded-circle me-2"
-                        href="https://www.facebook.com/mansasugar/"
-                        ><i class="fab fa-facebook-f"></i
-                        ></a>
-                     <a class="btn btn-square btn-primary rounded-circle me-2" href=""
-                        ><i class="fab fa-youtube"></i
-                        ></a>
-                     <a
-                        class="btn btn-square btn-primary rounded-circle me-2"
-                        href="https://www.linkedin.com/company/mansa-sugar-limited"
-                        ><i class="fab fa-linkedin-in"></i
-                        ></a>
+           <!-- Contact Start -->
+           <section  clas="animated-section" id="contact">
+            <div class="container bg-opacity-50 pt-5 px-5 py-10 my-5">
+               <div class="text-center mx-auto mb-5" style="max-width: 600px">
+                  <h1 class="display-5 mb-0">Contact Us</h1>
+                  <hr class="w-25 mx-auto" />
+               </div>
+               <!-- <p class="display-5 text-center mb-5">
+                  Feel free to contact us:       
+                  </p> -->
+               <div class="row">
+                  <!-- Contact Info Section -->
+                  <div class="col-md-6">
+                     <h5 class="mb-4">Our Office</h5>
+                     <p class="mb-2">
+                        <i class="fa fa-map-marker-alt" style="margin-right: 16px;"></i>Mansa Sugar Limited.
+                        Chembe, Mansa, Luapula Province, Zambia.
+                     </p>
+                     <p class="mb-2">
+                        <i class="fa fa-phone-alt "></i> +260 962377783
+                     </p>
+                     <p class="mb-2">
+                        <i class="fa fa-envelope "></i>customercare@mansasugar.com
+                     </p>
+                     <div class="d-flex pt-3">
+                        <a
+                           class="btn btn-square btn-primary rounded-circle me-2"
+                           href="https://www.instagram.com/mansasugarlimited/"
+                           ><i class="fab fa-instagram"></i
+                           ></a>
+                        <a
+                           class="btn btn-square btn-primary rounded-circle me-2"
+                           href="https://www.facebook.com/mansasugar/"
+                           ><i class="fab fa-facebook-f"></i
+                           ></a>
+                        <a class="btn btn-square btn-primary rounded-circle me-2" href=""
+                           ><i class="fab fa-youtube"></i
+                           ></a>
+                        <a
+                           class="btn btn-square btn-primary rounded-circle me-2"
+                           href="https://www.linkedin.com/company/mansa-sugar-limited"
+                           ><i class="fab fa-linkedin-in"></i
+                           ></a>
+                     </div>
+                     <hr class="d-md-none my-5 mx-auto mt-3 w-100" />
                   </div>
-                  <hr class="d-md-none my-5 mx-auto mt-3 w-100" />
-               </div>
-               <!-- Map Section -->
-               <div class="col-md-6">
-                  <iframe
-                     src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d499639.8182303432!2d28.123884201049805!3d-11.944280526683288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smansa%20sugar%20limited.%20chembe%2C%20mansa%2C%20luapula%20province%2C%20zambia%20map!5e0!3m2!1sen!2sin!4v1692733708957!5m2!1sen!2sin"
-                     width="auto"
-                     height="auto"
-                     style="border: 0"
-                     allowfullscreen=""
-                     loading="lazy"
-                     referrerpolicy="no-referrer-when-downgrade"
-                     ></iframe>
+                  <!-- Map Section -->
+                  <div class="col-md-6">
+                     <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d499639.8182303432!2d28.123884201049805!3d-11.944280526683288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smansa%20sugar%20limited.%20chembe%2C%20mansa%2C%20luapula%20province%2C%20zambia%20map!5e0!3m2!1sen!2sin!4v1692733708957!5m2!1sen!2sin"
+                        width="auto"
+                        height="auto"
+                        style="border: 0"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        ></iframe>
+                  </div>
                </div>
             </div>
-         </div>
-      </section>
-      <!-- contact end  -->
+         </section>
+   
+         <!-- contact end  -->
       <!-- Footer Start -->
       <section id="footers">
          <div
@@ -410,15 +454,14 @@
                   <div class="col-lg-4 col-md-12 text-white">
                      <h5 class="text-white mb-4">Our Office</h5>
                      <p class="mb-2 text-white">
-                        <i class="fa fa-map-marker-alt me-3 text-white"></i>Mansa Sugar
-                        Limited. Chembe, Mansa, Luapula Province, Zambia.
+                        <i class="fa fa-map-marker-alt" style="margin-right: 16px;"></i>Mansa Sugar Limited.
+                        Chembe, Mansa, Luapula Province, Zambia.
                      </p>
                      <p class="mb-2 text-white">
-                        <i class="fa fa-phone-alt me-3 text-white"></i> +260 962377783
+                        <i class="fa fa-phone-alt "></i> +260 962377783
                      </p>
-                     <p class="mb-0 text-white">
-                        <i class="fa fa-envelope me-3 text-white"></i
-                           >customercare@mansasugar.com
+                     <p class="mb-2 text-white">
+                        <i class="fa fa-envelope "></i>customercare@mansasugar.com
                      </p>
                      <div class="d-flex pt-3">
                         <a
@@ -443,17 +486,16 @@
                            ></a>
                      </div>
                   </div>
-                  <div class="col-lg-4 col-md-12 text-white">
-                     <h5 class="text-white mb-4">Quick Links</h5>
-                     <a class="btn btn-link text-white" href="">About Us</a>
-                     <a class="btn btn-link text-white" href="">Contact Us</a>
-                     <a class="btn btn-link text-white" href="">Our Services</a>
-                     <a class="btn btn-link text-white" href=""
-                        >Terms &amp; Condition</a
+                  <div class="col-lg-4 col-md-12 text-white quick-section">
+                     <h5 class="text-white mb-4 quick">Quick Links</h5>
+                     <a class="btn btn-link text-white" href="#about">About Us</a>
+                     <a class="btn btn-link text-white" href="#product">Our Products</a>
+                     <a class="btn btn-link text-white" href="#careers">Careers</a>
+                     <a class="btn btn-link text-white" href="#contact"
+                        >Contact Us</a
                         >
-                     <a class="btn btn-link text-white" href="">Support</a>
                   </div>
-                  <div class="col-lg-4 col-md-12 text-white">
+                  <div class="col-lg-4 col-md-12 text-white business-section">
                      <h5 class="text-white mb-4">Business Hours</h5>
                      <p class="mb-1 text-white">Monday - Friday</p>
                      <h6 class="text-light text-white">09:00 am - 07:00 pm</h6>
@@ -504,6 +546,43 @@
            showCursor: false,
            loop: true
          });
-      </script>    
+      </script>   
+      
+      <!-- navbar scrolled changes effect -->
+
+      <script>
+         // Add a scroll event listener
+         window.addEventListener('scroll', function() {
+             var navbar = document.querySelector('.navbar');
+             var logo = document.querySelector('.navbar-brand img');
+             if (window.scrollY > 0) {
+                 navbar.classList.add('scrolled');
+                 logo.style.maxHeight = '70px';
+             } else {
+                 navbar.classList.remove('scrolled');
+                 logo.style.maxHeight = '150px';
+             }
+         });
+     </script>
+
+    
+<script>
+   // Automatically close the toggle button when the user scrolls
+
+   const toggleButton = document.getElementById('toggleButton');
+   const content = document.getElementById('navbarSupportedContent'); // Update this ID
+
+   toggleButton.addEventListener('click', () => {
+       content.classList.toggle('show');
+   });
+
+   window.addEventListener('scroll', () => {
+       if (content.classList.contains('show')) {
+           content.classList.remove('show');
+       }
+   });
+</script>
+
+
    </body>
 </html>
