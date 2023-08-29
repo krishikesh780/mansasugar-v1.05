@@ -31,96 +31,64 @@
       <link href="css/bootstrap.min.css" rel="stylesheet" />
       <!-- Template Stylesheet -->
       <link href="css/style.css" rel="stylesheet" />
-      <style>
-         /* Change background color when scrolled */
-
-      
-
-@media(min-width:992px){
-
-   .navbar.scrolled {
-  background-color: white; /* Change background color when scrolled */
-height: 100px;
-width: 100%;
-padding-bottom: 50px;
-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Horizontal offset, vertical offset, blur radius, color */
-
-
-}
- 
-.navbar-brand img {
-  max-height: 100px; /* Decrease logo size when scrolled */
-  transition: max-height 0.3s ease;
-}
-
-}
-
-@media(max-width:768px){
-
-.navbar.scrolled {
-background-color: white; /* Change background color when scrolled */
-height: 100px;
-width: 100%;
-padding-bottom: 100px;
-margin-top: -50px;
-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Horizontal offset, vertical offset, blur radius, color */
-
-}
-
-.navbar-brand img {
-max-height: 100px; /* Decrease logo size when scrolled */
-transition: max-height 0.3s ease;
-}
-
-}
-
-/* end */
-      </style>
    </head>
    <body>
       <!-- Topbar Start -->
-      <div class="container-fluid top-social d-none d-lg-block ">
+      <div class="container-fluid top-social d-none d-lg-block">
          <div class="row gx-0 text-end pr-5">
             <div class="col-lg-12">
-               <!-- Social network links -->
                <div class="h-100 d-inline-flex align-items-center text-white">
-                  <span>Follow Us:</span>
-                  <a class="btn btn-link text-light" href="https://www.facebook.com/mansasugar/"><i class="fab fa-facebook-f"></i></a>
-                  <a class="btn btn-link text-light" href="#"><i class="fab fa-twitter"></i></a>
-                  <a class="btn btn-link text-light" href="https://www.linkedin.com/company/mansa-sugar-limited/"><i class="fab fa-linkedin-in"></i></a>
-                  <a class="btn btn-link text-light" href="https://www.instagram.com/mansasugarlimited/"><i class="fab fa-instagram"></i></a>
+                  <a class="btn btn-square btn-primary rounded-circle me-2" href="https://www.instagram.com/mansasugarlimited/" aria-label="Instagram">
+                  <i class="fab fa-instagram"></i>
+                  </a>
+                  <a class="btn btn-square btn-primary rounded-circle me-2" href="https://www.facebook.com/mansasugar/" aria-label="Facebook">
+                  <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a class="btn btn-square btn-primary rounded-circle me-2" href="#" aria-label="YouTube">
+                  <i class="fab fa-youtube"></i>
+                  </a>
+                  <a class="btn btn-square btn-primary rounded-circle me-2" href="https://www.linkedin.com/company/mansa-sugar-limited" aria-label="LinkedIn">
+                  <i class="fab fa-linkedin-in"></i>
+                  </a>
                </div>
             </div>
          </div>
       </div>
-      <section id="header" class=" position-relative">
-      <header id="header-navbar">
-         <video src="img/header/header2.mp4" class="bg-img lines" id="header-video" autoplay muted loop>
+      <section id="header" class=" position-relative" >
+      <header id="header-navbar" >
+         <!-- <video src="img/header/header2.mp4" class="bg-img lines" id="header-video" autoplay muted loop>
             Your browser does not support the video tag.
-            </video>
-         <!-- <img src="img/header/header1.png" alt="" class="bg-img lines"/> -->
+            </video> -->
+         <img src="img/header/header1.png" alt="" class="bg-img lines" 
+            />
          <div class="typewriter">
             <h1><span class="auto-type"></span></h1>
          </div>
-         <nav class="navbar navbar-expand-lg navbar-dark  navbar-toggler text-light fixed-top">
-            <div class="container-fluid my-3">
+         <nav class="navbar navbar-expand-lg navbar-dark  navbar-toggler text-light
+            wow fadeIn"
+            data-wow-delay="0.1s"
+            style="
+            visibility: visible;
+            animation-delay: 0.1s;
+            animation-name: fadeIn;
+            "
+            >
+            <div class="container-fluid my -3 navbar-margin-adjust">
                <a href="index.html" class="navbar-brand p-0">
                   <h1 class="m-0 text-uppercase ">
                      <img id="brand-img" src="img/logo6.png" style="height: 150px; background-color: transparent;" />
                   </h1>
                </a>
                <button id="toggleButton"
-    class="navbar-toggler"
-    type="button"
-    data-bs-toggle="collapse"
-    data-bs-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent"
-    aria-expanded="false"
-    aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon">
-        <i class="fas fa-bars" style="color: #000; font-size: 30px; text-align: center;"></i>
-    </span>
-</button>
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav ms-auto me-3">
                      <li class="nav-item">
@@ -170,17 +138,17 @@ transition: max-height 0.3s ease;
                      <p class="display-5">What we do</p>
                      <p class="conatiner-fluid">
                         Mansa Sugar Is a Subsidiary of <a href="#">SVG Group</a> a family business which shares its initials with its founder Shamji Vaja Gada (SVG). We have 1500+ highly skilled employees supporting multiple functions. Spread over 2700+ Hectare of farm land and our operation starting in 2017, we have registered a rapid growth in producing Vitamin-A enriched brown and household Sugar, as well as specialty in industrial molasses. With a strong Distribution network we are proudly available in all ten provinces of Zambia through Distributers, Wholesale, Chain stores and Retail Supermarket/Stores.
-                        <div class="container">
-                           <h5 class="display-10"> Our Office and Depots:</h5>
-                           <ul>
-                              <li style="color: #000;">Chembe (Factory and Head Office)
-                              </li>
-                              <li style="color: #000;"> Kitwe Depot
-                              </li>
-                              <li style="color: #000;">                        Lusaka Depot
-                              </li>
-                           </ul>
-                        </div>
+                     <div class="container">
+                        <h5 class="display-10"> Our Office and Depots:</h5>
+                        <ul>
+                           <li style="color: #000;">Chembe (Factory and Head Office)
+                           </li>
+                           <li style="color: #000;"> Kitwe Depot
+                           </li>
+                           <li style="color: #000;">                        Lusaka Depot
+                           </li>
+                        </ul>
+                     </div>
                      </p>
                   </div>
                   <div class="col-lg-6 col-md-6 about-left2 px-5">
@@ -197,7 +165,7 @@ transition: max-height 0.3s ease;
                                  </h2>
                                  <h2 style="font-size: 1.5rem;">+</h2>
                               </div>
-                              <p class="py-0 p-text" style="font-size: small; white-space: nowrap;"><strong>Hectare of Firm size</strong></p>
+                              <p class="py-0 p-text" style="font-size: small; white-space: nowrap;"><strong>Hectare of Farm size</strong></p>
                            </div>
                            <div class="text-center border p-4">
                               <i class="fa fa-users fa-3x text-primary mb-3"></i>
@@ -207,7 +175,7 @@ transition: max-height 0.3s ease;
                                  </h2>
                                  <h2 style="font-size: 1.5rem;">+</h2>
                               </div>
-                              <p class="py-0 p-text" style="font-size: small; white-space: nowrap;"><strong>Employee</strong></p>
+                              <p class="py-0 p-text" style="font-size: small; white-space: nowrap;"><strong>Employees</strong></p>
                            </div>
                         </div>
                      </div>
@@ -228,7 +196,7 @@ transition: max-height 0.3s ease;
                               <h2 class="h1 mb-0 " data-toggle="counter-up">
                                  5
                               </h2>
-                              <p class="py-0 p-text" style="font-size: small;"><strong>subsidiary</strong></p>
+                              <p class="py-0 p-text" style="font-size: small;"><strong>Subsidiary</strong></p>
                            </div>
                         </div>
                      </div>
@@ -375,69 +343,68 @@ transition: max-height 0.3s ease;
             </div>
          </div>
       </section>
-           <!-- Contact Start -->
-           <section  clas="animated-section" id="contact">
-            <div class="container bg-opacity-50 pt-5 px-5 py-10 my-5">
-               <div class="text-center mx-auto mb-5" style="max-width: 600px">
-                  <h1 class="display-5 mb-0">Contact Us</h1>
-                  <hr class="w-25 mx-auto" />
+      <!-- Contact Start -->
+      <section  clas="animated-section" id="contact">
+         <div class="container bg-opacity-50 pt-5 px-5 py-10 my-5">
+            <div class="text-center mx-auto mb-5" style="max-width: 600px">
+               <h1 class="display-5 mb-0">Contact Us</h1>
+               <hr class="w-25 mx-auto" />
+            </div>
+            <!-- <p class="display-5 text-center mb-5">
+               Feel free to contact us:       
+               </p> -->
+            <div class="row">
+               <!-- Contact Info Section -->
+               <div class="col-md-6">
+                  <h5 class="mb-4">Our Office</h5>
+                  <p class="mb-2">
+                     <i class="fa fa-map-marker-alt" style="margin-right: 16px;"></i>Mansa Sugar Limited.
+                     Chembe, Mansa, Luapula Province, Zambia.
+                  </p>
+                  <p class="mb-2">
+                     <i class="fa fa-phone-alt "></i> +260 962377783
+                  </p>
+                  <p class="mb-2">
+                     <i class="fa fa-envelope "></i>customercare@mansasugar.com
+                  </p>
+                  <div class="d-flex pt-3">
+                     <a
+                        class="btn btn-square btn-primary rounded-circle me-2"
+                        href="https://www.instagram.com/mansasugarlimited/"
+                        ><i class="fab fa-instagram"></i
+                        ></a>
+                     <a
+                        class="btn btn-square btn-primary rounded-circle me-2"
+                        href="https://www.facebook.com/mansasugar/"
+                        ><i class="fab fa-facebook-f"></i
+                        ></a>
+                     <a class="btn btn-square btn-primary rounded-circle me-2" href=""
+                        ><i class="fab fa-youtube"></i
+                        ></a>
+                     <a
+                        class="btn btn-square btn-primary rounded-circle me-2"
+                        href="https://www.linkedin.com/company/mansa-sugar-limited"
+                        ><i class="fab fa-linkedin-in"></i
+                        ></a>
+                  </div>
+                  <hr class="d-md-none my-5 mx-auto mt-3 w-100" />
                </div>
-               <!-- <p class="display-5 text-center mb-5">
-                  Feel free to contact us:       
-                  </p> -->
-               <div class="row">
-                  <!-- Contact Info Section -->
-                  <div class="col-md-6">
-                     <h5 class="mb-4">Our Office</h5>
-                     <p class="mb-2">
-                        <i class="fa fa-map-marker-alt" style="margin-right: 16px;"></i>Mansa Sugar Limited.
-                        Chembe, Mansa, Luapula Province, Zambia.
-                     </p>
-                     <p class="mb-2">
-                        <i class="fa fa-phone-alt "></i> +260 962377783
-                     </p>
-                     <p class="mb-2">
-                        <i class="fa fa-envelope "></i>customercare@mansasugar.com
-                     </p>
-                     <div class="d-flex pt-3">
-                        <a
-                           class="btn btn-square btn-primary rounded-circle me-2"
-                           href="https://www.instagram.com/mansasugarlimited/"
-                           ><i class="fab fa-instagram"></i
-                           ></a>
-                        <a
-                           class="btn btn-square btn-primary rounded-circle me-2"
-                           href="https://www.facebook.com/mansasugar/"
-                           ><i class="fab fa-facebook-f"></i
-                           ></a>
-                        <a class="btn btn-square btn-primary rounded-circle me-2" href=""
-                           ><i class="fab fa-youtube"></i
-                           ></a>
-                        <a
-                           class="btn btn-square btn-primary rounded-circle me-2"
-                           href="https://www.linkedin.com/company/mansa-sugar-limited"
-                           ><i class="fab fa-linkedin-in"></i
-                           ></a>
-                     </div>
-                     <hr class="d-md-none my-5 mx-auto mt-3 w-100" />
-                  </div>
-                  <!-- Map Section -->
-                  <div class="col-md-6">
-                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d499639.8182303432!2d28.123884201049805!3d-11.944280526683288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smansa%20sugar%20limited.%20chembe%2C%20mansa%2C%20luapula%20province%2C%20zambia%20map!5e0!3m2!1sen!2sin!4v1692733708957!5m2!1sen!2sin"
-                        width="auto"
-                        height="auto"
-                        style="border: 0"
-                        allowfullscreen=""
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"
-                        ></iframe>
-                  </div>
+               <!-- Map Section -->
+               <div class="col-md-6">
+                  <iframe
+                     src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d499639.8182303432!2d28.123884201049805!3d-11.944280526683288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smansa%20sugar%20limited.%20chembe%2C%20mansa%2C%20luapula%20province%2C%20zambia%20map!5e0!3m2!1sen!2sin!4v1692733708957!5m2!1sen!2sin"
+                     width="auto"
+                     height="auto"
+                     style="border: 0"
+                     allowfullscreen=""
+                     loading="lazy"
+                     referrerpolicy="no-referrer-when-downgrade"
+                     ></iframe>
                </div>
             </div>
-         </section>
-   
-         <!-- contact end  -->
+         </div>
+      </section>
+      <!-- contact end  -->
       <!-- Footer Start -->
       <section id="footers">
          <div
@@ -447,8 +414,7 @@ transition: max-height 0.3s ease;
             visibility: visible;
             animation-delay: 0.1s;
             animation-name: fadeIn;
-            "
-            >
+            ">
             <div class="container-fluid py-3 text-white our-office">
                <div class="row gx-1 container-fluid footer-mobile-device">
                   <div class="col-lg-4 col-md-12 text-white">
@@ -520,7 +486,7 @@ transition: max-height 0.3s ease;
       <!-- copyright end -->
       <!-- Back to Top -->
       <a
-         href="#"
+         href="#header"
          class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"
          ><i class="bi bi-arrow-up"></i
          ></a>
@@ -547,9 +513,7 @@ transition: max-height 0.3s ease;
            loop: true
          });
       </script>   
-      
       <!-- navbar scrolled changes effect -->
-
       <script>
          // Add a scroll event listener
          window.addEventListener('scroll', function() {
@@ -563,26 +527,14 @@ transition: max-height 0.3s ease;
                  logo.style.maxHeight = '150px';
              }
          });
-     </script>
-
-    
-<script>
-   // Automatically close the toggle button when the user scrolls
-
-   const toggleButton = document.getElementById('toggleButton');
-   const content = document.getElementById('navbarSupportedContent'); // Update this ID
-
-   toggleButton.addEventListener('click', () => {
-       content.classList.toggle('show');
-   });
-
-   window.addEventListener('scroll', () => {
-       if (content.classList.contains('show')) {
-           content.classList.remove('show');
-       }
-   });
-</script>
-
-
+      </script>
+      <!-- <script>
+         // Automatically close the content when the user scrolls
+         window.addEventListener('scroll', () => {
+              if (content.classList.contains('show')) {
+                  content.classList.remove('show');
+              }
+          });
+         </script> -->
    </body>
 </html>
