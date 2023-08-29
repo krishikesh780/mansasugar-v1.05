@@ -31,7 +31,14 @@
       <link href="css/bootstrap.min.css" rel="stylesheet" />
       <!-- Template Stylesheet -->
       <link href="css/style.css" rel="stylesheet" />
+      <style>
+         /* Add a CSS class for the active link */
+         .active-link {
+           color: red !important;
+         }
+       </style>
    </head>
+
    <body>
       <!-- Topbar Start -->
       <div class="container-fluid top-social d-none d-lg-block">
@@ -125,15 +132,18 @@
       </header>
       </secction>
       <!-- About Start -->
-      <section id="outer-about">
-         <section id="about">
-            <div class="inner-about facts" style="background: #f1f1f1">
-            <div class="text-center mx-auto mb-5" style="max-width: 600px">
+      <section id="outer-about" >
+         <section id="about" class="about ">
+            <div  class="inner-about facts" style="background: #f1f1f1">
+            <!-- <div id="about2" class="text-center mx-auto mb-5" style="max-width: 600px">
                <h1 class="display-5 mb-0">About Us</h1>
                <hr class="w-25 mx-auto bg-primary" />
-            </div>
-            <div class="container">
+            </div> -->
+            <div class="container animated-section">
                <div class="row">
+                  <h1 class="display-5 mb-0 text-center py-5" style="padding-bottom: 100px;">About Us<hr class="custom-hr mx-auto bg-primary" style="width: 12%;" />
+                  </h1>
+
                   <div class="col-lg-6 col-md-6 px-5">
                      <p class="display-5">What we do</p>
                      <p class="conatiner-fluid">
@@ -204,16 +214,18 @@
                </div>
             </div>
          </section>
-      </section>
+        </section>
       <!-- About end -->
       <!-- product start -->
-      <section id="product">
-         <div class="container-xxl py-5">
-            <div class="container">
-               <div class="text-center mx-auto mb-5" style="max-width: 600px">
+      <section id="product" >
+         <div class="container-xxl py-5 animated-section ">
+            <div class="container ">
+               <!-- <div class="text-center mx-auto mb-5" style="max-width: 600px">
                   <h1 class="display-5 mb-0">Our Products</h1>
+                  <section id="product2"><h1 class="display-5 mb-0">Our Products</h1></section>
+
                   <hr class="w-25 mx-auto bg-primary" />
-               </div>
+               </div> -->
                <div
                   class="text-center mx-auto pb-4 wow fadeInUp"
                   data-wow-delay="0.1s"
@@ -224,12 +236,11 @@
                   animation-name: fadeInUp;
                   "
                   >
-                  <!-- <p class="fw-medium text-uppercase text-primary mb-2">
-                     Our Products
-                     </p> -->
+                  <h1 class="display-5 mb-0 text-center py-5" style="padding-bottom: 100px;">Our Product<hr class="custom-hr mx-auto bg-primary" style="width: 25%;" />
+                  </h1>
                   <h5 class="display-10 mb-4">We Provide Best Industrial Products</h5>
                </div>
-               <div class="row gy-5 gx-5">
+               <div class="row gy-5 gx-5 animated-section">
                   <div
                      class="col-md-6 col-lg-6 wow fadeInUp"
                      data-wow-delay="0.1s"
@@ -303,12 +314,14 @@
          </div>
       </section>
       <!-- career1 start  -->
-      <section id="careers" class="container py-5 ">
-         <div class="text-center mx-auto mb-5" style="max-width: 600px">
+      <section id="careers" class="container py-5">
+         <!-- <div class="text-center mx-auto mb-5" style="max-width: 600px">
             <h1 class="display-5 mb-0">Careers</h1>
             <hr class="w-25 mx-auto bg-primary" />
-         </div>
-         <div class="row gx-5">
+         </div> -->
+         <div class="row gx-5 animated-section">
+            <h1 class=" display-5 mb-0 text-center py-5" style="padding-bottom: 100px;">Careers<hr class="custom-hr mx-auto bg-primary" style="width: 12%;" />
+            </h1>
             <div class="col-lg-6">
                <div class="intro">
                   <h4>Welcome to Our Company</h4>
@@ -344,18 +357,33 @@
          </div>
       </section>
       <!-- Contact Start -->
-      <section  clas="animated-section" id="contact">
-         <div class="container bg-opacity-50 pt-5 px-5 py-10 my-5">
-            <div class="text-center mx-auto mb-5" style="max-width: 600px">
-               <h1 class="display-5 mb-0">Contact Us</h1>
-               <hr class="w-25 mx-auto" />
-            </div>
+      <section   id="contact">
+         <!-- <h1 class="display-5 mb-0 text-center">Contact Us</h1> -->
+
+         <div class="container bg-opacity-50  px-5 py-10 my-5 animated-section ">
+            
             <!-- <p class="display-5 text-center mb-5">
                Feel free to contact us:       
                </p> -->
+
             <div class="row">
                <!-- Contact Info Section -->
+               <!-- <div class="text-center mx-auto mb-5" style="max-width: 600px">
+                  <h1 class="display-5 mb-0">Contact Us</h1>
+                  <hr class="w-25 mx-auto" />
+               </div> -->
+               <h1 class="display-5 mb-0 text-center py-5" style="padding-bottom: 100px;">Contact Us<hr class="custom-hr mx-auto bg-primary" style="width: 12%;" />
+               </h1>               
+
+
                <div class="col-md-6">
+
+                  <!-- <div class="text-center mx-auto mb-5" style="max-width: 600px">
+                     <h1 class="display-5 mb-0">Contact Us</h1>
+                     <hr class="w-25 mx-auto" /
+                  </div> -->
+
+
                   <h5 class="mb-4">Our Office</h5>
                   <p class="mb-2">
                      <i class="fa fa-map-marker-alt" style="margin-right: 16px;"></i>Mansa Sugar Limited.
@@ -405,6 +433,8 @@
          </div>
       </section>
       <!-- contact end  -->
+
+
       <!-- Footer Start -->
       <section id="footers">
          <div
@@ -536,5 +566,53 @@
               }
           });
          </script> -->
-   </body>
+
+
+       
+
+  <script>
+    $(document).ready(function () {
+      // Smooth scroll to anchor links
+      $('a[href^="#"]').on('click', function (event) {
+        event.preventDefault();
+
+        const target = $(this.getAttribute('href'));
+        if (target.length) {
+          $('html, body').stop().animate({
+            scrollTop: target.offset().top - 50 // Adjust offset as needed
+          }, 1000); // Adjust scroll speed as needed
+
+          // Remove active class from other links and add it to the clicked link
+          $('a[href^="#"]').removeClass('active-link');
+          $(this).addClass('active-link');
+        }
+      });
+    });
+  </script>
+
+
+
+<!-- Animated-section -->
+<script>
+    // JavaScript code
+    const animatedSections = document.querySelectorAll(".animated-section");
+ 
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate");
+        } else {
+          entry.target.classList.remove("animate");
+        }
+      });
+    });
+ 
+    animatedSections.forEach((section) => {
+      observer.observe(section);
+    });
+  </script>
+
+
+</body>
 </html>
+

@@ -37,13 +37,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Js for about card img
 
-// Fancybox Configuration
-// $('[data-fancybox="gallery"]').fancybox({
-//   buttons: ["slideShow", "thumbs", "zoom", "fullScreen", "share", "close"],
-//   loop: false,
-//   protect: true,
-// });
-
 // Animated header text
 
 //Map setup

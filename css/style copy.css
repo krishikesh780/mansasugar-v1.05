@@ -844,7 +844,7 @@ footer {
 
 /* about page css */
 
-#about h6 {
+.about h6 {
   font-size: x-large;
 }
 .about {
